@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
-  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
-  <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="1ff0d68b7ecad9656f8553d3f64d3927ba399a7f" upstream="refs/heads/display.lnx.8.0.r7-rel">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="DISPLAY.LA.2.0" sync-j="8"/>
+  <project name="clo/la/platform/hardware/qcom/display" path="hardware/qcom/display" revision="1ff0d68b7ecad9656f8553d3f64d3927ba399a7f" upstream="refs/heads/display.lnx.8.0.r7-rel">
+    <linkfile src="config/display-product.mk" dest="vendor/qcom/defs/product-defs/vendor/display-product.mk"/>
+    <linkfile src="config/display-board.mk" dest="vendor/qcom/defs/board-defs/vendor/display-board.mk"/>
   </project>
-  <project remote="clo-la" name="platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="0b4f780bd5614a5740d0f77b3612b0d310eb34da" upstream="refs/heads/display-kernel.lnx.5.10.r8-rel">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
+  <project name="clo/la/platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="0b4f780bd5614a5740d0f77b3612b0d310eb34da" upstream="refs/heads/display-kernel.lnx.5.10.r8-rel">
+    <linkfile src="display_driver_product.mk" dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk"/>
+    <linkfile src="display_driver_board.mk" dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk"/>
   </project>
 </manifest>
