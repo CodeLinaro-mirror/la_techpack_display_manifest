@@ -2,7 +2,6 @@
 <manifest>
     <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
-  <project remote="clo-la" name="meta-qti-display" path="meta-qti-display" revision="d6746a023d1dd622b1b71e71c207c62e754510ac" upstream="refs/heads/display-le.lnx.3.0.r8-rel"/>
   <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="f9e9898bd1b0f88977b503e4f0607f61ebe651ee" upstream="refs/heads/display.lnx.9.0.r8-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk" src="config/display-techpack.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
@@ -16,5 +15,6 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk" src="mm_driver_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk" src="mm_driver_board.mk"/>
   </project>
+  <project remote="clo-la" name="meta-qti-display" path="meta-qti-display" revision="d6746a023d1dd622b1b71e71c207c62e754510ac" upstream="refs/heads/display-le.lnx.3.0.r8-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="1489594b210c4c38759d52f0d7944a98088945f6" upstream="refs/heads/display-le.lnx.3.0.r8-rel"/>
 </manifest>
