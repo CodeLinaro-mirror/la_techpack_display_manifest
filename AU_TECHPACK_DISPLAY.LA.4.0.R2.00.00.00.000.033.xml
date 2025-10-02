@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="770ee6cb48fe34bcad9285f4a88d470aaa442c90" upstream="refs/heads/display.lnx.10.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk" src="config/display-techpack.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="3e86ad7fe0716d17be00e563f7077115bba29e4e" upstream="refs/heads/display-kernel.lnx.1.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/mm-drivers" path="vendor/qcom/opensource/mm-drivers" revision="f37d625cda5ef9f033b3d34d9c1a64c52ebc51c2" upstream="refs/heads/display-kernel.lnx.1.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk" src="mm_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk" src="mm_driver_board.mk"/>
+  </project>
+  <project remote="clo-la" name="meta-qti-display" path="meta-qti-display" revision="b4d44777fa5ac2ed4f37040d52d6d0cd4706537f" upstream="refs/heads/display-le.lnx.4.0.r2-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="a185b5524df52cce356583db35306ddb531a62f4" upstream="refs/heads/display-le.lnx.4.0.r2-rel"/>
+</manifest>
