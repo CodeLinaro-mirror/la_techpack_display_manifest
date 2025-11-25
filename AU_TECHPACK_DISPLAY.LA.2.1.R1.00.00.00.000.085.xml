@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="DISPLAY.LA.2.1" sync-j="8"/>
+  <project name="clo/la/platform/hardware/qcom/display" path="hardware/qcom/display" revision="ebb258c4645f78f53a1689731a03799e14213c0f" upstream="refs/heads/display.lnx.8.1.r1-rel">
+    <linkfile src="config/display-product.mk" dest="vendor/qcom/defs/product-defs/vendor/display-product.mk"/>
+    <linkfile src="config/display-board.mk" dest="vendor/qcom/defs/board-defs/vendor/display-board.mk"/>
+  </project>
+  <project name="clo/la/platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="12fbc11bcd7841560e89828ca94a1f5845722f3d" upstream="refs/heads/display-kernel.lnx.5.10.2.r1-rel">
+    <linkfile src="display_driver_product.mk" dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk"/>
+    <linkfile src="display_driver_board.mk" dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk"/>
+  </project>
+</manifest>
