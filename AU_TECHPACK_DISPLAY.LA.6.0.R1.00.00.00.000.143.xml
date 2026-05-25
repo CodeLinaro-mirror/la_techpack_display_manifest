@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="display/libgbm" path="vendor/qcom/opensource/display/libgbm" revision="99e2e7b0db2e0b584b2dbac6a95fb8def4bb1022" upstream="refs/heads/display-le.lnx.6.0.r2-rel"/>
+  <project remote="clo-la" name="meta-qti-display" path="meta-qti-display" revision="faa6502b34e801d90795c9ba9def4e91a5e864e8" upstream="refs/heads/display-le.lnx.6.0.r2-rel"/>
+  <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="7c6d8e6bfa9bb29403ec2dd5beadb0c317b9d34d" upstream="refs/heads/display-la.lnx.16.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk" src="config/display-techpack.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/display-core" path="vendor/qcom/opensource/display-core" revision="f170204cb7a27e6388aec9b55d2675a5328dea57" upstream="refs/heads/display.lnx.12.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-core-product.mk" src="config/display-core-product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/display-devicetree" path="vendor/qcom/opensource/display-devicetree" revision="30ef2ad7a84fd37956014afdd3ab9d2e7a10518f" upstream="refs/heads/display-kernel.lnx.12.0.r2-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="9edd089092c691088dfe8f14e1b6276a634fce4c" upstream="refs/heads/display-kernel.lnx.12.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/display-intf" path="vendor/qcom/opensource/display-intf" revision="f3bbad123b4dc9aeb8143e90fa1b93ddc4dcbe90" upstream="refs/heads/display-intf.lnx.1.0.r6-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/mm-devicetree" path="vendor/qcom/opensource/mm-devicetree" revision="83cc4d37a574743fc61a337cb719e5b60488fdb5" upstream="refs/heads/display-kernel.lnx.12.0.r2-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/mm-drivers" path="vendor/qcom/opensource/mm-drivers" revision="43bbc1f4c074e96b71f04b60e8829df3f67cd504" upstream="refs/heads/display-kernel.lnx.12.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk" src="mm_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk" src="mm_driver_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="3300bd76a7c2342d31fa80846d959bba36043d0b" upstream="refs/heads/display-le.lnx.6.0.r2-rel"/>
+</manifest>
