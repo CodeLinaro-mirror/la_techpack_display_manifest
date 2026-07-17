@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="meta-qti-display" path="meta-qti-display" revision="d6746a023d1dd622b1b71e71c207c62e754510ac" upstream="refs/heads/display-le.lnx.3.11.r3-rel"/>
+  <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="58fe52e1cd0f15b41d9f0fd7e1ddbf0a6e6b5b4e" upstream="refs/heads/display.lnx.9.11.r3-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk" src="config/display-techpack.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="036a7b34a718372ea041bd28aa745a751d1afcaf" upstream="refs/heads/display-kernel.lnx.5.15.3.r8-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/mm-drivers" path="vendor/qcom/opensource/mm-drivers" revision="218b6215871041624f18b98d1bbae66a5bc65107" upstream="refs/heads/display-kernel.lnx.5.15.3.r8-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk" src="mm_driver_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk" src="mm_driver_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="b16a9ffb29097afc0ed24de5ddef1a0aa9d55d7d" upstream="refs/heads/display-le.lnx.3.11.r3-rel"/>
+</manifest>
