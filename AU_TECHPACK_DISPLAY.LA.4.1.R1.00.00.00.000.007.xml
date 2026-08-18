@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="DISPLAY.LA.4.0" sync-j="8"/>
+  <project name="clo/la/meta-qti-display" revision="dd6aaa6568ece1f2bd042a5b64cf1593dc50bf92" upstream="refs/heads/display-le.lnx.4.0.r9-rel" path="meta-qti-display"/>
+  <project name="clo/la/platform/hardware/qcom/display" path="hardware/qcom/display" revision="268bd467463b4d65d6e73b5107715ebbaa9bbf4c" upstream="refs/heads/display.lnx.10.0.r9-rel">
+    <linkfile src="config/display-techpack.mk" dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk"/>
+    <linkfile src="config/display-product.mk" dest="vendor/qcom/defs/product-defs/vendor/display-product.mk"/>
+    <linkfile src="config/display-board.mk" dest="vendor/qcom/defs/board-defs/vendor/display-board.mk"/>
+  </project>
+  <project name="clo/la/platform/vendor/opensource/display-drivers" path="vendor/qcom/opensource/display-drivers" revision="d3209a8c1cbae6a889c20faf85042de1a12d4daf" upstream="refs/heads/display-kernel.lnx.1.0.r10-rel">
+    <linkfile src="display_driver_product.mk" dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk"/>
+    <linkfile src="display_driver_board.mk" dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk"/>
+  </project>
+  <project name="clo/la/platform/vendor/opensource/mm-drivers" path="vendor/qcom/opensource/mm-drivers" revision="f2a7050293fcb9b4c5cc7546ede27dae5ddf5119" upstream="refs/heads/display-kernel.lnx.1.0.r10-rel">
+    <linkfile src="mm_driver_product.mk" dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk"/>
+    <linkfile src="mm_driver_board.mk" dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk"/>
+  </project>
+  <project name="clo/la/platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="e901666eebe388d0db8d0258409b5d34e7716f07" upstream="refs/heads/display-le.lnx.4.0.r9-rel"/>
+</manifest>
